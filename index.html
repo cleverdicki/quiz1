@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="src/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" defer></script>
+    <script src="http://code.jquery.com/jquery-3.5.1.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="overlay first"></div>
+        <div class="overlay second"></div>
+        <div class="overlay third"></div>
+        <header class="header">
+            <nav class="nav__link">
+                <label for="btn" class="icon">
+                    <span class="fa fa-bars"></span>
+                </label>
+                <input type="checkbox" id="btn">
+                <ul>
+                    <li class="nav__item"><a href="#">Home</a></li>
+                    <li class="nav__item"><a href="#">Profile</a></li>
+                    <li class="nav__item">
+                        <label for="btn-1" class="show">My Hometown +</label>
+                        <a href="#">My Hometown</a>
+                        <input type="checkbox" id="btn-1">
+                        <ul>
+                            <li class="nav__more"><a href="#">Profile</a></li>
+                            <li class="nav__more"><a href="#">Local Food</a></li>
+                            <li class="nav__more"><a href="#">Tourist Places</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+</body>
+
+</html>
