@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.home__img {
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    width: 620px;
+    z-index: 1;
+}
+
+header {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 10px 10%;
+}
+
+nav {
+    width: 100%;
+    z-index: 5;
+}
+
+nav:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+    margin-right: 0px;
+    position: relative;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 18px;
+    padding: 8px 15px;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: cyan;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #33ffff, 0 0 5px #66ffff;
+}
+
+nav ul ul {
+    position: absolute;
+    top: 50px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .75s;
+}
+
+nav ul li:hover>ul {
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+}
+
+nav ul ul li {
+    position: relative;
+    width: 150px;
+    float: none;
+    display: list-item;
+}
+
+.show,
+.icon,
+input {
+    display: none;
+}
+
+.home {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: max-content max-content;
+    grid-template-rows: -webkit-max-content -webkit-max-content;
+    grid-template-rows: max-content max-content;
+    -ms-flex-line-pack: distribute;
+    align-content: space-around;
+    row-gap: 2.3rem;
+    font-weight: 700;
+    padding-left: 5rem;
+}
+
+.home__information {
+    margin-top: 13rem;
+    padding-left: 1rem;
+    border-left: 5px solid white;
+    z-index: 0;
+    color: white;
+}
+
+.home__present {
+    font-size: 0.85rem;
+}
+
+.home__title {
+    font-size: 2.5rem;
+}
+
+.home__skill {
+    font-size: 1rem;
+}
+
+@media (max-width: 1160px) {
+    nav ul li a {
+        font-size: 16px;
+    }
+    .home {
+        -ms-grid-rows: max-content 20px;
+        grid-template-rows: -webkit-max-content 20px;
+        grid-template-rows: max-content 20px;
+        -ms-flex-line-pack: center;
+        align-content: center;
+    }
+    .home__information {
+        margin-top: 2rem;
+        z-index: 3;
+    }
+    .home__img {
+        width: 525px;
+        right: 5%;
+    }
+}
+
+@media (max-width: 700px) {
+    nav ul {
+        margin-right: 0px;
+        float: left;
+    }
+    nav ul li,
+    nav ul ul li {
+        display: block;
+        width: 100%;
+    }
+    nav ul ul {
+        top: 70px;
+        margin-top: 1rem;
+        position: static;
+        border-top: none;
+        float: none;
+        display: none;
+        opacity: 1;
+        visibility: visible;
+    }
+    nav ul ul a {
+        padding-left: 40px;
+    }
+    .show {
+        display: block;
+        color: white;
+        font-size: 18px;
+        padding: 0 20px;
+        line-height: 70px;
+        cursor: pointer;
+    }
+    .show:hover {
+        color: cyan;
+    }
+    .icon {
+        display: block;
+        color: white;
+        position: absolute;
+        right: 40px;
+        line-height: 70px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    nav ul li label:hover {
+        color: cyan;
+        border-radius: 5px;
+        box-shadow: 0 0 5px #33ffff, 0 0 5px #66ffff;
+    }
+    .home__information {
+        display: none;
+    }
+    .show+a,
+    ul {
+        display: none;
+    }
+    [id^=btn]:checked+ul {
+        display: block;
+    }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+.first {
+    background-color: #4e1116;
+}
+
+.second {
+    background-color: #4e1116;
+    left: 33.3%;
+}
+
+.third {
+    background-color: #4e1116;
+    left: 66.6%;
+}
