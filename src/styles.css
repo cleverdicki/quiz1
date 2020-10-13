@@ -97,3 +97,53 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+@media screen and (max-width: 1400px) {
+    .feature-img-food,
+    .feature-img-tourist {
+        width: 500px;
+        margin-top: 25%;
+        padding: 50px;
+        margin-left: 5rem;
+    }
+    .feature-img-hometown {
+        width: 500px;
+        margin-top: 20%;
+        padding: 50px;
+        margin-left: 3rem;
+    }
+}
+
+@media screen and (max-width: 1190px) {
+    .feature-box {
+        font-size: 13px;
+    }
+    .feature-img-food,
+    .feature-img-tourist {
+        width: 400px;
+        margin-top: 25%;
+        padding: 50px;
+        margin-left: 5rem;
+    }
+    .feature-img-hometown {
+        width: 400px;
+        margin-top: 20%;
+        padding: 50px;
+        margin-left: 3rem;
+    }
+    .feature-img-profile {
+        width: 320px;
+        margin-top: 10%;
+        padding: 50px;
+        margin-left: 5rem;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .feature-img-food,
+    .feature-img-hometown,
+    .feature-img-profile,
+    .feature-img-tourist {
+        display: none;
+    }
+}
