@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="src_homepage/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" defer></script>
+    <script src="http://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="src_homepage/main.js" defer></script>
+</head>
+
+<body>
+    <div class="overlay first"></div>
+    <div class="overlay second"></div>
+    <div class="overlay third"></div>
+    <header class="header">
+        <nav class="nav__link">
+            <label for="btn" class="icon">
+                    <span class="fa fa-bars"></span>
+                </label>
+            <input type="checkbox" id="btn">
+            <ul>
+                <li class="nav__item"><a href="index.html">Homepage</a></li>
+                <li class="nav__item"><a href="profile.html">Profile</a></li>
+                <li class="nav__item">
+                    <label for="btn-1" class="show">My Hometown +</label>
+                    <a href="#">My Hometown</a>
+                    <input type="checkbox" id="btn-1">
+                    <ul>
+                        <li class="nav__more"><a href="hometown.html">Profile</a></li>
+                        <li class="nav__more"><a href="food.html">Local Food</a></li>
+                        <li class="nav__more"><a href="tourist.html">Tourist Place</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="l-main bd-grid">
+        <div class="home">
+            <div class="home__information">
+                <span class="home__present animated">Hello, i'm</span>
+                <h1 class="home__title animated">Clever Dicki Marpaung</h1>
+                <span class="home__skill animated">ITS Student</span>
+            </div>
+
+            <div class="home__img">
+                <img src="src_homepage/img.jpg" alt="Clever Dicki Marpaung">
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
